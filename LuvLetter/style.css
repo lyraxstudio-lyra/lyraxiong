@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Geo:ital@0;1&family=Long+Cang&family=Lugrasimo&display=swap');
+
+body{
+    background-image: url(dither_it_bg1_twosands.png);
+    color: chartreuse;
+}
+h1 {
+          font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+    align-content: center;
+    position: relative;
+    text-align: center;
+}
+
+div.enCh {
+    display: flex;
+}
+
+div.letterIndividual1{
+      font-family: "Long Cang", cursive;
+  font-weight: 400;
+    font-size: 22px;
+  font-style: normal;
+    flex: 50%;
+    text-align: right;
+    padding-right: 10px;
+}
+div.letterIndividual2{
+      font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+    flex: 50%;
+    text-align: left;
+    padding-left: 10px;
+}
+div.img1{
+    position: absolute;
+    left: 300px;
+    top: 40px;
+    z-index: -1;
+}
+
+div.img2{
+    position: absolute;
+    left: 40px;
+    top: 400px;
+    z-index: -1;
+}
