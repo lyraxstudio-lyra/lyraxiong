@@ -14,8 +14,11 @@ h1 {
 }
 
 div.enCh {
+  background-color:  rgba(16,16,16,0.3);
+ padding-left: 20px;
     display: flex;
 }
+
 
 div.letterIndividual1{
       font-family: "Long Cang", cursive;
@@ -54,13 +57,13 @@ div.letterIndividual4{
 div.img1{
     position: absolute;
     left: 300px;
-    top: 40px;
-    z-index: -1;
+    top: 400px;
+    z-index: 1;
 }
 
 div.img2{
     position: absolute;
     left: 40px;
     top: 200px;
-    z-index: -1;
+    z-index: 1;
 }
