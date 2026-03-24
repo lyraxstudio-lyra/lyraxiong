@@ -37,24 +37,31 @@ div.ImNot: hover {
 background-image: url(bg_dithered.jpg);
 }
 */
-div.imgGrid{
+div.imgGrid {
     display: flex;
     padding: 100px;
+}
+
+div.column {
+    flex: 20%;
 }
 .container .hover-image {
     width: 300px;
     height: 300px;
-    display: none; /* Hide the hover image initially */
+    display: none;
+    /*padding: 20px;*/
 }
 
 .container:hover .initial {
     width: 300px;
     height: 300px;
-    display: none; /* Hide the initial image on hover */
+    display: none;
+    /*padding: 20px;*/
 }
 
 .container:hover .hover-image {
     width: 300px;
     height: 300px;
-    display: block; /* Show the hover image on hover */
+    display: block;
+    /*padding: 20px;*/
 }
