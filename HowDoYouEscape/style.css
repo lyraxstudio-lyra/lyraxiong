@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&display=swap');
+
+body {
+   /*align-content: center;*/
+  background-image: url(OldDrawing.jpg);
+
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-size: auto;
+   display: flex;
+  gap: 18px;
+    justify-content: center; 
+    align-items: center;    
+  
+}
+
+
+
+div.text{
+ position: fixed;
+ left: 10px;
+ top: 200px;
+}
+
+div.title{
+ position: fixed;
+ align-content: center;
+ left: 45%;
+ top: 20px;
+}
+
+h1 {
+   font-style: italic;
+    font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  color: greenyellow;
+ /*
+ top: 100px;
+ position: fixed;
+ */
+}
+/*
+h1 {
+ position: fixed;
+ left: 10px;
+ top: 30px;
+}
+
+h2{
+ position: fixed;
+ left: 10px;
+ top: 80px;
+}*/
+
+h2 {
+    color: aquamarine;
+ font-weight: 500;
+
+ /*
+ left: 10px;
+ top: 200px;
+ */
+
+}
+
+a {
+  color: palevioletred;
+  position: relative;
+  font-size: 30px;
+}
