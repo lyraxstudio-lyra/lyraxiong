@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Geo:ital@0;1&display=swap');
+body {
+ background-image: url(OldDrawing.jpg);
+ color: aquamarine;
+  /*font-family: "Black Ops One", system-ui;*/
+ /*font-family: "Bitcount Single", system-ui;*/
+ font-style: normal;
+ background-size: auto;
+ gap: 20px;
+}
+
+h1 {
+ font-family: "Black Ops One", system-ui;
+ font-weight: 400;
+ color: greenyellow;
+ font-size: 40px;
+ text-align: center;
+ position: relative;
+ font-style: italic;
+}
+
+a {
+ top: 30px;
+ left: 30px;
+ color: palevioletred;
+ position: relative;
+ font-size: 30px;
+}
+
+/*
+div.grayBox {
+ background-color: grey;
+ opacity: 0.5;
+ align-content: center;
+ left: 100px;
+ right: 100px;
+ justify-content: center;
+ position: absolute;
+}
+*/
+div.content {
+  background-color:  rgba(16,16,16,0.8);
+ padding-left: 20px;
+ position: absolute;
+ font-size: 25px;
+ align-content: center;
+ left: 100px;
+ right: 100px;
+ justify-content: center;
+}
+p {
+ letter-spacing: 3px;
+   /*font-family: "Geo", sans-serif;*/
+  font-weight: 400;
+  font-style: normal;
+ line-height: 40px;
+ color: antiquewhite;
+}
