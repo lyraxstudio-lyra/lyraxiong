@@ -67,3 +67,51 @@ div.img2 {
   top: 200px;
   z-index: 1;
 }
+ /*need to figure out the image layout*/
+div.imgGrid1 {
+  position: absolute;
+  top: -30px;
+    align-content: left;
+  margin-top: 20px;
+    display: flex;
+    padding: 50px;
+}
+
+div.imgGrid2 {
+  position: absolute;
+  top: -30px;
+  align-content: right;
+  margin-top: 20px;
+    display: flex;
+    padding: 50px;
+}
+
+
+div.column {
+    flex: 20%;
+}
+.container .hover-image {
+    /*
+    width: 300px;
+    height: 300px;
+    */
+    display: none;
+    /*padding: 20px;*/
+}
+
+.container:hover .initial {
+    width: 300px;
+    height: 300px;
+    display: none;
+    /*padding: 20px;*/
+}
+
+.container:hover .hover-image {
+    /*
+    width: 300px;
+    height: 300px;
+    */
+    display: block;
+    /*padding: 20px;*/
+}
+
