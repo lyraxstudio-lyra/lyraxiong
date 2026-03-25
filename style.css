@@ -13,7 +13,7 @@ h2 {
 p{
     /*align-content: center;*/
       font-family: "Lugrasimo", cursive;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     padding-left: 10px;
     position: relative;
@@ -59,8 +59,10 @@ div.column {
     flex: 20%;
 }
 .container .hover-image {
+    /*
     width: 300px;
     height: 300px;
+    */
     display: none;
     /*padding: 20px;*/
 }
@@ -73,8 +75,10 @@ div.column {
 }
 
 .container:hover .hover-image {
+    /*
     width: 300px;
     height: 300px;
+    */
     display: block;
     /*padding: 20px;*/
 }
