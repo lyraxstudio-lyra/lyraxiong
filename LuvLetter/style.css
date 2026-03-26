@@ -14,6 +14,13 @@ h1 {
   text-align: center;
 }
 
+div.HiddenText{
+  position: absolute;
+  left: 60px;
+  font-size: 20px;
+  
+}
+
 div.enCh {
   background-color: rgba(16, 16, 16, 0.3);
   padding-left: 20px;
