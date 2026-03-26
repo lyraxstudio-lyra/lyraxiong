@@ -14,6 +14,14 @@ h1 {
   text-align: center;
 }
 
+div.link{
+  position: absolute;
+  right: 30px;
+  top: -3px;
+  font-size: 40px;
+  
+}
+
 div.HiddenText{
   position: absolute;
   left: 60px;
