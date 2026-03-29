@@ -9,7 +9,8 @@ body {
 h2 {
     font-size: 25px;
 }
-
+a { color: aqua;
+}
 p{
     /*align-content: center;*/
       font-family: "Lugrasimo", cursive;
