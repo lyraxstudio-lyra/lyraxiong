@@ -14,45 +14,65 @@ h1 {
   text-align: center;
 }
 
+div.link{
+  position: absolute;
+  right: 30px;
+  top: -3px;
+  font-size: 40px;
+  
+}
+
+div.HiddenText{
+  position: absolute;
+  left: 60px;
+  font-size: 20px;
+  
+}
+
 div.enCh {
   background-color: rgba(16, 16, 16, 0.3);
   padding-left: 20px;
   display: flex;
+  z-index: -1;
 }
 
 div.letterIndividual1 {
+  z-index: 99;
   font-family: "Long Cang", cursive;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
   flex: 50%;
   text-align: right;
-  padding-right: 80px;
+  padding-right: 10px;
 }
 div.letterIndividual2 {
+   z-index: 99;
   font-family: "Lugrasimo", cursive;
   font-weight: 400;
   font-style: normal;
   flex: 50%;
   text-align: left;
-  padding-left: 80px;
+  padding-left: 10px;
 }
 div.letterIndividual3 {
+   z-index: 99;
   font-family: "Long Cang", cursive;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
   flex: 50%;
   text-align: right;
-  padding-right: 30px;
+  /*padding-right: 30px;*/
 }
 div.letterIndividual4 {
+   z-index: 99;
   font-family: "Lugrasimo", cursive;
   font-weight: 400;
   font-style: normal;
   flex: 50%;
   text-align: left;
-  padding-left: 30px;
+  /*padding-left: 30px;*/
 }
 div.img1 {
   position: absolute;
@@ -67,3 +87,54 @@ div.img2 {
   top: 200px;
   z-index: 1;
 }
+ /*need to figure out the image layout*/
+div.imgGrid1 {
+  position: absolute;
+  top: -40px;
+  left: 1px;
+    align-content: left;
+  /*margin-top: 20px;*/
+    display: flex;
+    padding: 50px;
+  z-index: 999;
+}
+
+div.imgGrid2 {
+  position: absolute;
+  top: -40px;
+  align-content: right;
+  right: 1px;
+  /*margin-top: 20px;*/
+    display: flex;
+    padding: 50px;
+}
+
+
+div.column {
+    flex: 20%;
+}
+.container .hover-image {
+    /*
+    width: 300px;
+    height: 300px;
+    */
+    display: none;
+    /*padding: 20px;*/
+}
+
+.container:hover .initial {
+    width: 300px;
+    height: 300px;
+    display: none;
+    /*padding: 20px;*/
+}
+
+.container:hover .hover-image {
+    /*
+    width: 300px;
+    height: 300px;
+    */
+    display: block;
+    /*padding: 20px;*/
+}
+
