@@ -1,0 +1,40 @@
+body {
+    background-color: antiquewhite;
+}
+
+div.content {
+  display: flex;
+/*margin: 16px;*/
+    /*position: absolute;*/
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+}
+
+div.pageWrap{
+    margin-left: 15%;
+    margin-right: 18%;
+}
+div.titleWrap{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h3 {
+    font-size: 25px;
+    /*flex: 50%;*/
+    text-align: left;
+    margin: 1px;
+}
+
+h4 {
+    font-size: 15px;
+    flex: 30%;
+    text-align: left;
+    margin: 10px;
+}
+
+p {
+    font-size: 18px;
+    flex: 70%;
+    text-align: left;
+}
