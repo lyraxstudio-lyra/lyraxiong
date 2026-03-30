@@ -11,12 +11,16 @@ div.content {
 }
 
 div.pageWrap{
+    /*margin-top: 15%;*/
     margin-left: 15%;
     margin-right: 18%;
+     margin-bottom: 20%;
 }
 div.titleWrap{
+    margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
+   
 }
 
 h3 {
@@ -39,7 +43,7 @@ div.link{
 
 h4 {
     font-size: 15px;
-    flex: 30%;
+    flex: 40%;
     text-align: left;
     margin: 10px;
 }
@@ -48,4 +52,5 @@ p {
     font-size: 18px;
     flex: 70%;
     text-align: left;
+    margin-left: 15px;
 }
