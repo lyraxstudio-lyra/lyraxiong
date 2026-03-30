@@ -31,7 +31,7 @@ function setup() {
 
 function draw() {
   //background(48, 52, 52);
-  background(0);
+  background(250);
   text("W A S D to move");
       push();
     translate(0,0,-100);
