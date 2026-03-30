@@ -37,6 +37,19 @@ function draw() {
     translate(0,0,-100);
     image(backgroundImg,-1000,-700);
     pop();
+  push();
+    translate(0,0,-1000);
+    image(backgroundImg,-1000,-700);
+  translate(0,0,500);
+  let axis5 = [0, 1, 0];
+  rotate(90, axis5);
+  for (let n = 0; n < 20; n++){  
+    bz=n*40;
+  bar(0,0,-bz);
+    //bar(0,0,bz+200);
+    
+  }
+pop();  
    lights();
     
   
@@ -116,7 +129,7 @@ translate(-2000,0,1000);
   rotate(30, axis3);
 
   for (let j = 0; j < 20; j++){  
-    bx=j*30;
+    bx=j*40;
     //translate(0,by,0);
     bar(bx,0,100);
   }
@@ -126,7 +139,27 @@ pop();
   //bar(0,10,1000);
   //bar(0,15,1000);
   //bar(0,20,1000);
-
+  
+  push();
+  translate(2000,0,500);
+  for (let l = 0; l < 20; l++){  
+    by=l*40;
+    //translate(0,by,0);
+    bar(-100,by,300);
+  }
+  pop();
+  
+  push();
+  
+  translate(100,-280,630);
+  let axis4 = [0, 1, 0];
+  rotate(120, axis4);
+  for (let m = 0; m < 20; m++){  
+    bz=m*40;
+    //translate(0,by,0);
+    bar(-100,-100,bz);
+  }
+  pop();
 }
 
 
