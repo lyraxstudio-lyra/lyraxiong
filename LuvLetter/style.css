@@ -14,10 +14,13 @@ h1 {
   text-align: center;
 }
 
+a {
+  color: aqua;
+}
 div.link{
   position: absolute;
-  right: 30px;
-  top: -3px;
+  right: 50px;
+  top: 20px;
   font-size: 40px;
   
 }
