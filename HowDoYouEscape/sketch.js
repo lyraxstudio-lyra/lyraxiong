@@ -17,7 +17,7 @@ let glitchFont;
 
 let textLines = [
   "The gate is too far away.",
-  "Don't follow their rule.",
+  "You have reached the edge of this space.",
   "Looking for an exit? Or hope.",
   "Turn back and stay with the flower.",
   "This place does not want to end."
@@ -144,7 +144,10 @@ function draw() {
 
   pop();
 
-  let isOut = x < -1000 || x > 500 || y < -1000 || y > 500 || z > 1000;
+  let isOut =
+    x < -1000 || x > 500 ||
+    y < -1000 || y > 500 ||
+    z < -1000 || z > 500;
 
   if (isOut && !wasOut) {
     currentText = floor(random(textLines.length));
@@ -153,6 +156,7 @@ function draw() {
 
   textAppear();
   teleport();
+console.log(x, y, z);
 }
 
 class Particles {
@@ -185,21 +189,23 @@ class Particles {
 
 function textAppear() {
   let showBoundaryText =
-    x < -1000 || x > 500 || y < -1000 || y > 500 || z > 1000;
+    x < -800 || x > 500 ||
+    y < -800 || y > 500 ||
+    z < -1200 || z > 800;
 
   let showStubbornText =
-    (z < -900 && z > -1600) ||
-    (x < -1600 && x > -2100) ||
-    (y < -1600 && y > -2100) ||
-    (z > 800 && z < 1600) ||
-    (x > 800 && x < 1600) ||
-    (y > 800 && y < 1600);
+    (x > 2500 && x < 3500) ||
+    (x < -2000 && x > -3000) ||
+    (y > 2000 && y < 3000) ||
+    (y < -2000 && y > -3000) ||
+    (z > 2500 && z < 3500) ||
+    (z < -3000 && z > -3500);
 
   if (showBoundaryText || showStubbornText) {
     let msg;
 
     if (showStubbornText) {
-      msg = "you are way too stubborn";
+      msg = "you are way too stubborn...";
     } else {
       msg = textLines[currentText];
     }
@@ -252,12 +258,9 @@ function windowResized() {
 
 function teleport() {
   if (
-    x > 1600 ||
-    y > 1600 ||
-    z > 1600 ||
-    z < -1600 ||
-    x < -2100 ||
-    y < -2100
+    x >= 3500 || x <= -3000 ||
+    y >= 3000 || y <= -3000 ||
+    z >= 3500 || z <= -4000
   ) {
     x = 100;
     y = 100;
