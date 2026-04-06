@@ -1,6 +1,5 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib Poeney2.mtl
 g default
 v 0.694567 1.424761 0.264620
 v 1.054018 1.508385 0.673763
