@@ -23,9 +23,9 @@ let textLines = [
   "This place does not want to end."
 ];
 
-let wasOut = false;
 let currentText = 0;
 let textPanel;
+let wasBoundaryText = false;
 
 function preload() {
   shape = loadModel("Poeney2.obj", true);
@@ -144,19 +144,10 @@ function draw() {
 
   pop();
 
-  let isOut =
-    x < -1000 || x > 500 ||
-    y < -1000 || y > 500 ||
-    z < -1000 || z > 500;
-
-  if (isOut && !wasOut) {
-    currentText = floor(random(textLines.length));
-  }
-  wasOut = isOut;
-
+  updateBoundaryText();
   textAppear();
   teleport();
-console.log(x, y, z);
+  console.log(x, y, z);
 }
 
 class Particles {
@@ -185,6 +176,25 @@ class Particles {
 
     pop();
   }
+}
+
+function updateBoundaryText() {
+  let showBoundaryText =
+    x < -1000 || x > 800 ||
+    y < -1000 || y > 800 ||
+    z < -1200 || z > 1000;
+
+  if (showBoundaryText && !wasBoundaryText) {
+    let nextText = floor(random(textLines.length));
+
+    while (nextText === currentText && textLines.length > 1) {
+      nextText = floor(random(textLines.length));
+    }
+
+    currentText = nextText;
+  }
+
+  wasBoundaryText = showBoundaryText;
 }
 
 function textAppear() {
