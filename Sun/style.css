@@ -59,7 +59,19 @@ div .bottomLine {
 
 p {
     color: yellow;
+}
 
+div.toplink{
+  text-align: center;
+  /*left: 60px;*/
+  position: relative;
+}
+a {
+  
+    font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  color: aqua;
+  font-size: 15px;
 }
 
 
@@ -76,15 +88,16 @@ canvas {
 
 .button-holder{
     align-content: center;
-    margin: 20px;
+    margin-top: 80px;
     position: absolute;
 }
 .button-row {
   position: relative;
-  bottom: 10px;
-  left: 50%;
-    size: 50px;
-  transform: translateX(-50%);
+  top: 10px;
+  /*left: 50%;*/
+  bottom: 40px;
+    size: 80px;
+  /*transform: translateX(-50%);*/
   text-align: center;
 }
 

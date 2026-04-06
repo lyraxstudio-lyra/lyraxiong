@@ -53,7 +53,8 @@ background-image: url(bg_dithered.jpg);
 */
 div.imgGrid {
     display: flex;
-    padding: 100px;
+   padding-left: 10%;
+    padding-right: 10%;
 }
 
 div.column {

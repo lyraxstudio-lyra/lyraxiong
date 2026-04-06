@@ -1,40 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Faster+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Geo:ital@0;1&family=Long+Cang&family=Lugrasimo&display=swap");
 body {
     background-color: antiquewhite;
 }
 
 div.content {
-  display: flex;
-/*margin: 16px;*/
+    display: flex;
+    /*margin: 16px;*/
     /*position: absolute;*/
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+div.detail {
+    display: flex;
+    /*margin-top: -10px;*/
+    /*font-size: 10px;*/
 }
 
-div.pageWrap{
+div.pageWrap {
+    /*margin-top: 15%;*/
     margin-left: 15%;
     margin-right: 18%;
+    margin-bottom: 20%;
 }
-div.titleWrap{
+div.titleWrap {
+    margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
 }
 
 h3 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 25px;
     /*flex: 50%;*/
     text-align: left;
     margin: 1px;
 }
 
-h4 {
+div.link {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    font-size: 40px;
+}
+p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    margin-top: -35px;
+    flex: 70%;
     font-size: 15px;
+    text-align: left;
+}
+h4 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
     flex: 30%;
     text-align: left;
     margin: 10px;
 }
 
-p {
+h6 {
+    font-family: "Fira Sans", sans-serif;
     font-size: 18px;
+    font-weight: 500;
+    /*font-style: normal;*/
     flex: 70%;
     text-align: left;
+    margin-left: 15px;
+    margin-top: 1px;
+    font-style: normal;
+}
+
+a {
+    color: darkblue;
 }

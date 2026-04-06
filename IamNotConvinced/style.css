@@ -1,0 +1,10 @@
+a {
+  color: aqua;
+}
+div.link{
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  font-size: 40px;
+  
+}
