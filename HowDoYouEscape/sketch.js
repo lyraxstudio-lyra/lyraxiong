@@ -16,8 +16,8 @@ let bz;
 let glitchFont;
 
 let textLines = [
-  "Don't obey the rule.",
-  "You have reached the edge of this space.",
+  "The gate is too far away.",
+  "Don't follow their rule.",
   "Looking for an exit? Or hope.",
   "Turn back and stay with the flower.",
   "This place does not want to end."
@@ -49,7 +49,6 @@ function setup() {
 }
 
 function draw() {
-
   background(0);
 
   push();
@@ -59,31 +58,6 @@ function draw() {
 
   lights();
 
-
-  //background(48, 52, 52);
-  background(250);
-  text("W A S D to move");
-      push();
-    translate(0,0,-100);
-    image(backgroundImg,-1000,-700);
-    pop();
-  push();
-    translate(0,0,-1000);
-    image(backgroundImg,-1000,-700);
-  translate(0,0,500);
-  let axis5 = [0, 1, 0];
-  rotate(90, axis5);
-  for (let n = 0; n < 20; n++){  
-    bz=n*40;
-  bar(0,0,-bz);
-    //bar(0,0,bz+200);
-    
-  }
-pop();  
-   lights();
-    
-  
-  //push();
   if (random(1) > explosionProb) {
     for (let i = 0; i < explosionNum; i++) {
       var p = new Particles();
@@ -147,7 +121,6 @@ pop();
   translate(-2000, 0, 1000);
   let axis3 = [0, 1, 0];
   rotate(30, axis3);
-
   for (let j = 0; j < 20; j++) {
     bx = j * 30;
     translate(bx, 0, 0);
@@ -180,40 +153,6 @@ pop();
 
   textAppear();
   teleport();
-
-  for (let j = 0; j < 20; j++){  
-    bx=j*40;
-    //translate(0,by,0);
-    bar(bx,0,100);
-  }
-pop();
-  //bar(0,0,1000);
-  //bar(0,5,1000);
-  //bar(0,10,1000);
-  //bar(0,15,1000);
-  //bar(0,20,1000);
-  
-  push();
-  translate(2000,0,500);
-  for (let l = 0; l < 20; l++){  
-    by=l*40;
-    //translate(0,by,0);
-    bar(-100,by,300);
-  }
-  pop();
-  
-  push();
-  
-  translate(100,-280,630);
-  let axis5 = [0, 1, 0];
-  rotate(120, axis5);
-  for (let m = 0; m < 20; m++){  
-    bz=m*40;
-    //translate(0,by,0);
-    bar(-100,-100,bz);
-  }
-  pop();
-
 }
 
 class Particles {
@@ -246,12 +185,15 @@ class Particles {
 
 function textAppear() {
   let showBoundaryText =
-    x < -1000 || x > 800 || y < -1000 || y > 800 || z > 1000 ;
+    x < -1000 || x > 500 || y < -1000 || y > 500 || z > 1000;
 
   let showStubbornText =
-    (z > -1000 && z < -500) ||
-    (y > -1500 && y < -500) ||
-    (x > -1500 && x < -500);
+    (z < -900 && z > -1600) ||
+    (x < -1600 && x > -2100) ||
+    (y < -1600 && y > -2100) ||
+    (z > 800 && z < 1600) ||
+    (x > 800 && x < 1600) ||
+    (y > 800 && y < 1600);
 
   if (showBoundaryText || showStubbornText) {
     let msg;
@@ -309,7 +251,14 @@ function windowResized() {
 }
 
 function teleport() {
-  if (z < -1000 || y < -1500 || x < -1500 || z >1500 || y > 1500 || x > 1500) {
+  if (
+    x > 1600 ||
+    y > 1600 ||
+    z > 1600 ||
+    z < -1600 ||
+    x < -2100 ||
+    y < -2100
+  ) {
     x = 100;
     y = 100;
     z = 600;
