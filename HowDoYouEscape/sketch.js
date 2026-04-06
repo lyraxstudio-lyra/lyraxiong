@@ -16,8 +16,8 @@ let bz;
 let glitchFont;
 
 let textLines = [
-  "The gate is too far away.",
-  "You have reached the edge of this space.",
+  "The Escape is right there.",
+  "Don't follow the rule.",
   "Looking for an exit? Or hope.",
   "Turn back and stay with the flower.",
   "This place does not want to end."
