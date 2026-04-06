@@ -117,7 +117,7 @@ if (keyIsDown(69) || keyIsDown(101)) { //'e' or 'E'
    particles = [];
     //filter(BLUR, 5);
   }
-  console.log(x, y, z);
+  //console.log(x, y, z);
 
   
 //I have question here
