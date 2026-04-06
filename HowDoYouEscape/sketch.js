@@ -189,9 +189,9 @@ class Particles {
 
 function textAppear() {
   let showBoundaryText =
-    x < -800 || x > 500 ||
-    y < -800 || y > 500 ||
-    z < -1200 || z > 800;
+    x < -1000 || x > 800 ||
+    y < -1000 || y > 800 ||
+    z < -1200 || z > 1000;
 
   let showStubbornText =
     (x > 2500 && x < 3500) ||
