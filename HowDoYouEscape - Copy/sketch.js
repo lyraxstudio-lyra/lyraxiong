@@ -21,10 +21,15 @@ let glitchFont;
 
 let textLines = [
   "The Escape is right there.",
+  "Why do you believe me?",
   "Don't follow the rule.",
   "Looking for an exit? Or hope.",
-  "Turn back and stay with the flower.",
-  "This place does not want to end."
+  "Turn back and stay with the flower. but why do you listen to me?",
+  "This place does not want to end.",
+  "There is no point looking around.",
+  "Who made the rule?",
+  "You can't escape this.",
+  "Enjoy the scene."
 ];
 
 let currentText = 0;
@@ -152,7 +157,7 @@ function draw() {
 
   push();
   scale(60);
-  translate(0, -50, 80);
+  translate(0, -30, 80);
   let axis5 = [0, 0, 1];
   rotate(180, axis5);
   texture(tex2);

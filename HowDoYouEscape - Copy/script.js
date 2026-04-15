@@ -163,7 +163,7 @@ function createMessagePanel() {
 function updateMessagePanel(msg) {
   messageCtx.clearRect(0, 0, messageCanvas.width, messageCanvas.height);
 
-  messageCtx.fillStyle = "rgba(0,0,0,0.7)";
+  messageCtx.fillStyle = "rgba(0,0,0,0.4)";
   messageCtx.fillRect(0, 0, messageCanvas.width, messageCanvas.height);
 
   messageCtx.fillStyle = "white";

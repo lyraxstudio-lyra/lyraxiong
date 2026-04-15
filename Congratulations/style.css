@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 200;
     color: greenyellow;
     font-size: 40px;
     text-align: center;
@@ -23,7 +23,8 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 100;
 }
 a {
     /*top: 30px;*/
@@ -55,7 +56,8 @@ div.content {
     justify-content: center;
 }
 p {
-          font-family: "Rubik Glitch", system-ui;
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 20px;
   /*font-weight: 20;*/
     letter-spacing: 3px;
     /*font-family: "Geo", sans-serif;*/
