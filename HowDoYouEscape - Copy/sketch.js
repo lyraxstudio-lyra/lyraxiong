@@ -35,6 +35,8 @@ let textLines = [
 let currentText = 0;
 let textPanel;
 let wasBoundaryText = false;
+let teleportedMessage = false;
+let teleportedMessageTimer = 0;
 
 function preload() {
   shape = loadModel("Poeney2.obj", true);
@@ -263,10 +265,18 @@ function textAppear() {
     (z > 3500 && z < 4500) ||
     (z < -4000 && z > -4500);
 
-  if (showBoundaryText || showStubbornText) {
+  let showTeleportedMessage = teleportedMessage && teleportedMessageTimer > 0;
+
+  if (showBoundaryText || showStubbornText || showTeleportedMessage) {
     let msg;
 
-    if (showStubbornText) {
+    if (showTeleportedMessage) {
+      msg = "You don't have the choice, because I have this power...haha";
+      teleportedMessageTimer--;
+      if (teleportedMessageTimer <= 0) {
+        teleportedMessage = false;
+      }
+    } else if (showStubbornText) {
       msg = "you are way too stubborn...";
     } else {
       msg = textLines[currentText];
@@ -293,7 +303,6 @@ function textAppear() {
     let up = createVector(cam.upX, cam.upY, cam.upZ);
 
     let forward = p5.Vector.sub(center, eye).normalize();
-    let right = forward.copy().cross(up).normalize();
 
     let panelDist = 180;
     let panelOffsetY = -40;
@@ -323,6 +332,8 @@ function mousePressed() {
     cam.setPosition(x, y, z);
     cam.lookAt(0, 0, 0);
     particles = [];
+    teleportedMessage = false;
+    teleportedMessageTimer = 0;
     return false;
   }
 }
@@ -349,5 +360,13 @@ function teleport() {
     cam.setPosition(x, y, z);
     cam.lookAt(0, 0, 0);
     particles = [];
+
+    if (random(1) < 0.3) {
+      teleportedMessage = true;
+      teleportedMessageTimer = 120;
+    } else {
+      teleportedMessage = false;
+      teleportedMessageTimer = 0;
+    }
   }
 }
