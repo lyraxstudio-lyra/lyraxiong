@@ -48,6 +48,7 @@ div.content {
  right: 100px;
  justify-content: center;
 }
+
 p {
  letter-spacing: 3px;
    /*font-family: "Geo", sans-serif;*/
@@ -55,4 +56,9 @@ p {
   font-style: normal;
  line-height: 40px;
  color: antiquewhite;
+}
+
+div.smaller {
+  font-size: 15px;
+  /*line-height: 1px;*/
 }
