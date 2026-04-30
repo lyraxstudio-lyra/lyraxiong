@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Eater&family=Playwrite+DK+Uloopet+Guides&family=Rubik+Glitch&family=Silkscreen:wght@400;700&display=swap");
+
 a {
   color: aqua;
 }
@@ -6,5 +8,16 @@ div.link{
   right: 50px;
   top: 20px;
   font-size: 40px;
-  
+}
+
+div.title{
+  font-family: "Silkscreen", sans-serif;
+        font-style: normal;
+  /*font-weight: 400;*/
+  font-weight: 200;
+    color: aqua;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    /*font-style: italic;*/
 }
