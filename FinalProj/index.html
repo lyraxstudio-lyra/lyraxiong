@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap"
+			rel="stylesheet" />
+
+		<title>Crystal Tree</title>
+		<!-- Needed for Three.js resources to connect to script. -->
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./src/three.webgpu.js",
+					"three/webgpu": "./src/three.webgpu.js",
+					"three/tsl": "./src/three.tsl.js",
+					"three/addons/": "./src/"
+				}
+			}
+		</script>
+		<!-- Three.js scene script, must contain module type. -->
+		<script type="module" src="./script.js"></script>
+	</head>
+	<body>
+		<div class="overlay">
+			<p>Artist Statement</p>
+			<p>
+				Tranquility, impermanence, and the ethereal are central to my work. I am interested in the escaping
+				nature of existence—how nothing remains permanent, yet every moment leaves its stamp on time. Through
+				the use of light, I aim to create a suspended moment: a quiet pause where time appears frozen. In this
+				stillness, the tree becomes crystallized, transformed into a fragile snapshot that exists between
+				memory, presence, and disappearance.
+				Is this a sunrise, or a sunset?
+			</p>
+		</div>
+	</body>
+</html>

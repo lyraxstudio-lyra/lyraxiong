@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Geo:ital@0;1&family=Long+Cang&family=Lugrasimo&display=swap');
+
+
+div.overlay {
+/*background-color: grey;*/
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+background-color:  rgba(61, 61, 61, 0.8);
+    color: aliceblue;
+ /*padding-left: 20px;*/
+ position: absolute;
+ font-size: 25px;
+ align-content: center;
+ left: 10px;
+bottom: 20px;
+ justify-content: center;
+    width: 300px;
+}
+
+p {
+    font-size: 15px;
+}
