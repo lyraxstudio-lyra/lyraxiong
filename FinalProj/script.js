@@ -186,7 +186,7 @@ function init() {
 		duck.material = new THREE.MeshPhysicalNodeMaterial();
 		duck.material.side = THREE.DoubleSide;
 		duck.material.transparent = true;
-		duck.material.color = new THREE.Color(0xffffb9);
+		duck.material.color = new THREE.Color(0xffa790);
 		duck.material.transmission = 1.5;
 		duck.material.thickness = 0.5;
 		duck.material.ior = 1.5;

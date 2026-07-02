@@ -20,3 +20,16 @@ bottom: 20px;
 p {
     font-size: 15px;
 }
+
+
+div.link {
+    padding-top: -60px;
+    /*color: aqua;*/
+    /*font-size: 13px;*/
+    
+}
+a {
+ /*top: -20px;*/
+    color: aqua;
+    font-size: 13px;  
+}
