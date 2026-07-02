@@ -262,7 +262,7 @@ function init() {
 	//flower
 	loader.load("./src/flower.glb", function (loadedGltf3) {
 		gltf3 = loadedGltf3.scene;
-		gltf3.scale.setScalar(0.01);
+		gltf3.scale.setScalar(0.011);
 		gltf3.translateY(0.08);
 		gltf3.translateZ(0.01);
 		scene.add(gltf3);
@@ -330,7 +330,7 @@ const ground = new THREE.Mesh(geometry, material);
 
 	// Layers
 
-	const volumetricLightingIntensity = uniform(0.7);
+	const volumetricLightingIntensity = uniform(0.6);
 
 	const volumetricLayer = new THREE.Layers();
 	volumetricLayer.disableAll();

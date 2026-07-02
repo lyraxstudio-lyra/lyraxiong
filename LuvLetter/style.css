@@ -21,8 +21,16 @@ div.link{
   position: absolute;
   right: 50px;
   top: 20px;
-  font-size: 40px;
-  
+  font-size: 40px; 
+}
+
+div.explain{
+  font-family: "Lugrasimo", cursive;
+  color: aqua;
+  position: absolute;
+  right: 50px;
+  top: 65px;
+  font-size: 20px;
 }
 
 div.HiddenText{
